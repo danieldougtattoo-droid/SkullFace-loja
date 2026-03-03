@@ -1,0 +1,39 @@
+<section id="loja" class="loja-section">
+    <div class="loja-container">
+
+<h2>Loja de Piercings</h2>
+
+<p class="loja-desc">
+    Jóias esterelizadas e prontas para usar.</p>
+  
+    <div class="produto-grid">
+        {% for produto in produtos %}
+        <div class="produto-card">
+            {% if produto.imagem %}
+            <img src="{{ produto.imagem.url }}" 
+                 alt="{{ produto.nome }}" 
+                 class="produto-imagem"
+                 loading="lazy"
+                 data-produto-indice="{{ forloop.counter0 }}"
+                 onclick="event.preventDefault(); event.stopPropagation(); event.stopImmediatePropagation(); abrirDescricao(
+                     '{{ produto.nome }}',
+                     '{{ produto.descricao | escapejs }}',
+                     '{{ produto.imagem.url }}',
+                     '{{ produto.preco | floatformat:2 }}',
+                     this
+                 ); return false;"
+                 style="pointer-events: auto;">
+            {% endif %}
+            <h3>{{ produto.nome }}</h3>
+
+            <p class="preco">R$ {{ produto.preco | floatformat:2 }}</p>
+                
+            <a href="https://wa.me/5511988582267?text=Olá, gostaria de comprar o produto {{ produto.nome }}"
+            class="btn-comprar">
+            Comprar pelo WhatsApp</a>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+</section>

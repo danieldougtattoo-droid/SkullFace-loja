@@ -1,0 +1,44 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Artistas | Skullface Tattoo{% endblock %}
+
+{% block content %} 
+
+<section class="artistas-page">
+     
+    <!-- ====== Doug Tattoo ====== -->
+    <div class="perfil-artista">
+
+        <div class="perfil-foto-box">
+            <img src="{% static 'core/img/artista1.jpg' %}" alt="Doug Tattoo">
+        </div>
+   
+    <div class="perfil-info">
+        <h2>Doug Tattoo</h2>
+        <p>Doug  é um artista de 26 anos de experiência, com especialidade em desenvolver tatuagens incriveis com linhas precisas e detalhes. Ele é conhecido por suas tatuagens com contrastes vibrantes, que refletem sua paixão pela arte e pela cultura da tattoo.</p>
+    <p><strong>Estilos:</strong> Abrange do basico ao mais complexo.</p>
+    <a href="https://www.instagram.com/dougtattoo/" target="_blank">Instagram</a>
+    <br><br>
+    <a href="{% url 'galeria' %}" class="btn-artista">Ver trabalhos</a>
+    </div>
+
+    </div>
+
+    <!-- ====== Ester Piercing ====== -->
+    <div class="perfil-artista">
+        <div class="perfil-foto-box">
+            <img src="{% static 'core/img/artista2.jpg' %}" alt="Ester Piercing">
+        </div>
+
+        <div class="perfil-info">
+            <h2>Ester Piercing</h2>
+            <p>Ester é  especilizada em aplicações delicadas, com foco em estética,segurança e procedimentos precisos</p>
+            <p><strong>Estilos:</strong> piercing do basico ao mais complexo.</p>
+            <a href="https://www.instagram.com/ester.piercer/" target="_blank">Instagram</a>
+            <br><br>
+            <a href="{% url 'galeria' %}" class="btn-artista">Ver trabalhos</a>
+        </div>
+        </div>
+</section>
+{% endblock %}

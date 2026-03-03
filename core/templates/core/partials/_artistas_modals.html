@@ -1,0 +1,33 @@
+{% load static %}
+
+<!-- Modal de Doug-->
+ <div id="artist-modal" class="artist-modal">
+    <div class="artist-modal-content">
+        <button class="close-modal" onclick="closeArtist()">&times;</button>
+
+        <!--Doug-->
+        <div class="artist-modal-body" id="artist-doug">
+            <img src="{% static 'core/img/artista1.jpg' %}" alt="Doug">
+            <h2>Doug Tattoo</h2>
+            <p>Tatuador com 26 anos de experiência, especializado em vários estilos e criações autorais.
+                Fundador do estúdio Skullface Tattoo, e apaixonado por transformar histórias em arte na pele.
+            </p>
+            <a href="https://www.instagram.com/dougtattoo/" target="_blank" class="btn btn-primary">
+                Ver Instagram
+            </a>
+        </div>
+
+        <!-- Modal de Ester-->
+        <div class="artist-modal-body" id="artist-ester">
+            <img src="{% static 'core/img/artista2.jpg' %}" alt="Ester">
+            <h2>Ester Piercer</h2>
+            <p>Piercer profissional, focada em bio segurança, higiene e estética.
+                Atendimento humanizado e técnica precisa para cada tipo de perfuração.
+            </p>
+            <a href="https://www.instagram.com/ester.piercer/" target="_blank" class="btn btn-primary">
+                Ver Instagram
+            </a>
+        </div>
+
+        </div>
+    </div>

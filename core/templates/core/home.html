@@ -1,0 +1,40 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--HOME / HERO-->
+{% include "core/partials/_home.html" %}
+
+<!--GALERIA-->
+<section id="galeria" class="section">
+    {% include "core/partials/_galeria.html" %}
+</section>
+<!-- Fim da seção galeria -->
+
+<!--LOJA (Produtos de Piercing)-->
+<section id="loja" class="section">
+    {% include "core/partials/_loja.html" %}
+</section>
+
+<!--ARTISTAS-->
+<section id="artistas" class="section dark">
+    {% include "core/partials/_artistas.html" %}
+</section>
+
+<!--AVALIAÇÕES -->
+<section id="avaliacoes" class="section">
+    <h2>Oque nossos clientes dizem</h2>
+    {% include "core/partials/_avaliacoes.html" %}
+</section>
+
+<!--SOBRE O ESTÚDIO-->
+<section id="sobre" class="section dark">
+    {% include "core/partials/_sobre.html" %}
+</section>  
+
+<!--CONTATO-->
+<section id="contato" class="section">
+    {% include "core/partials/_contato.html" %}
+</section>
+{% endblock %}

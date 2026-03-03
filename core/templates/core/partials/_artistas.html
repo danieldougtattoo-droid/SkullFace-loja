@@ -1,0 +1,29 @@
+{% load static %}
+
+<h2>Nossos Artistas</h2>
+
+<div class="artistas-grid">
+
+<div class="artista-card"
+    onclick="openArtist('doug')">
+    <img src="{% static 'core/img/artista1.jpg' %}" alt="Doug">
+    <h3>Doug</h3>
+    <p>Tatuador</p>
+    <a href="https://www.instagram.com/dougtattoo/" target="_blank" class="instagram-link" onclick="event.stopPropagation()">
+        Instagram
+        </a>
+</div>
+
+<div class="artista-card"
+    onclick="openArtist('ester')">
+    <img src="{% static 'core/img/artista2.jpg' %}" alt="Ester">
+    <h3>Ester</h3>
+    <p>Piercer Profissional</p>
+    <a href="https://www.instagram.com/ester.piercer/" target="_blank" class="instagram-link" onclick="event.stopPropagation()">
+        Instagram
+    </a>
+</div>
+</div>
+</div>
+
+{% include "core/partials/_artistas_modals.html" %}

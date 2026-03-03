@@ -1,0 +1,357 @@
+<style>
+    .portfolio-section {
+        margin-bottom: 60px;
+    }
+    
+    .portfolio-section:last-child {
+        margin-bottom: 0;
+    }
+    
+    .portfolio-carousel {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        min-height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+    }
+    
+    .carousel-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+    }
+    
+    .carousel-slide.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+    }
+    
+    .carousel-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+    
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(245, 196, 0, 0.8);
+        color: #000;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        touch-action: manipulation;
+    }
+    
+    .carousel-arrow:hover {
+        background: #f5c400;
+        transform: translateY(-50%) scale(1.1);
+    }
+    
+    .carousel-arrow:active {
+        transform: translateY(-50%) scale(0.95);
+    }
+    
+    .carousel-arrow.prev {
+        left: 15px;
+    }
+    
+    .carousel-arrow.next {
+        right: 15px;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .carousel-container {
+            height: 70vh;
+            min-height: 500px;
+        }
+        
+        .carousel-arrow {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+        
+        .carousel-arrow.prev {
+            left: 10px;
+        }
+        
+        .carousel-arrow.next {
+            right: 10px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .carousel-container {
+            height: 60vh;
+            min-height: 400px;
+        }
+        
+        .carousel-arrow {
+            width: 35px;
+            height: 35px;
+            font-size: 18px;
+        }
+        
+        /* Reduzir espaçamento do último portfolio-section (piercing) no mobile */
+        .portfolio-section:last-child {
+            margin-bottom: 0;
+        }
+    }
+</style>
+
+<!-- Carrossel de Tatuagem -->
+{% if trabalhos_tatuagem %}
+<div class="portfolio-section">
+    <h2>Portfólio - Tatuagem</h2>
+    
+    <div class="portfolio-carousel" id="carousel-tatuagem">
+        <div class="carousel-container">
+            {% for trabalho in trabalhos_tatuagem %}
+                {% if trabalho.imagem %}
+                <div class="carousel-slide {% if forloop.first %}active{% endif %}">
+                    <img src="{{ trabalho.imagem.url }}" alt="{{ trabalho.titulo }}">
+                </div>
+                {% endif %}
+            {% endfor %}
+            
+            <button class="carousel-arrow prev" onclick="previousSlideTatuagem()" aria-label="Foto anterior">‹</button>
+            <button class="carousel-arrow next" onclick="nextSlideTatuagem()" aria-label="Próxima foto">›</button>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Carrossel de Piercing -->
+{% if trabalhos_piercing %}
+<div class="portfolio-section">
+    <h2>Portfólio - Piercing</h2>
+    
+    <div class="portfolio-carousel" id="carousel-piercing">
+        <div class="carousel-container">
+            {% for trabalho in trabalhos_piercing %}
+                {% if trabalho.imagem %}
+                <div class="carousel-slide {% if forloop.first %}active{% endif %}">
+                    <img src="{{ trabalho.imagem.url }}" alt="{{ trabalho.titulo }}">
+                </div>
+                {% endif %}
+            {% endfor %}
+            
+            <button class="carousel-arrow prev" onclick="previousSlidePiercing()" aria-label="Foto anterior">‹</button>
+            <button class="carousel-arrow next" onclick="nextSlidePiercing()" aria-label="Próxima foto">›</button>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<script>
+    // Carrossel de Tatuagem
+    let currentSlideTatuagem = 0;
+    let slidesTatuagem = [];
+    let autoplayIntervalTatuagem;
+    let isTransitioningTatuagem = false;
+    const autoplayDelay = 4000;
+    
+    function initCarouselTatuagem() {
+        const carousel = document.getElementById('carousel-tatuagem');
+        if (!carousel) return;
+        
+        slidesTatuagem = carousel.querySelectorAll('.carousel-slide');
+        startAutoplayTatuagem();
+    }
+    
+    function showSlideTatuagem(index) {
+        if (slidesTatuagem.length === 0 || isTransitioningTatuagem) return;
+        
+        isTransitioningTatuagem = true;
+        
+        // Remover active de todos
+        slidesTatuagem.forEach(slide => slide.classList.remove('active'));
+        
+        // Calcular índice correto
+        currentSlideTatuagem = (index + slidesTatuagem.length) % slidesTatuagem.length;
+        
+        // Adicionar active no slide atual
+        slidesTatuagem[currentSlideTatuagem].classList.add('active');
+        
+        // Liberar transição após animação completar
+        setTimeout(() => {
+            isTransitioningTatuagem = false;
+        }, 850); // Ligeiramente maior que a transição CSS (0.8s)
+    }
+    
+    function nextSlideTatuagem() {
+        if (isTransitioningTatuagem) return;
+        showSlideTatuagem(currentSlideTatuagem + 1);
+        resetAutoplayTatuagem();
+    }
+    
+    function previousSlideTatuagem() {
+        if (isTransitioningTatuagem) return;
+        showSlideTatuagem(currentSlideTatuagem - 1);
+        resetAutoplayTatuagem();
+    }
+    
+    function startAutoplayTatuagem() {
+        if (slidesTatuagem.length <= 1) return;
+        stopAutoplayTatuagem(); // Garantir que não há múltiplos intervals
+        autoplayIntervalTatuagem = setInterval(() => {
+            if (!isTransitioningTatuagem) {
+                nextSlideTatuagem();
+            }
+        }, autoplayDelay);
+    }
+    
+    function stopAutoplayTatuagem() {
+        if (autoplayIntervalTatuagem) {
+            clearInterval(autoplayIntervalTatuagem);
+            autoplayIntervalTatuagem = null;
+        }
+    }
+    
+    function resetAutoplayTatuagem() {
+        stopAutoplayTatuagem();
+        // Aguardar um pouco antes de reiniciar para evitar conflitos
+        setTimeout(() => {
+            startAutoplayTatuagem();
+        }, 100);
+    }
+    
+    // Carrossel de Piercing
+    let currentSlidePiercing = 0;
+    let slidesPiercing = [];
+    let autoplayIntervalPiercing;
+    let isTransitioningPiercing = false;
+    
+    function initCarouselPiercing() {
+        const carousel = document.getElementById('carousel-piercing');
+        if (!carousel) return;
+        
+        slidesPiercing = carousel.querySelectorAll('.carousel-slide');
+        startAutoplayPiercing();
+    }
+    
+    function showSlidePiercing(index) {
+        if (slidesPiercing.length === 0 || isTransitioningPiercing) return;
+        
+        isTransitioningPiercing = true;
+        
+        slidesPiercing.forEach(slide => slide.classList.remove('active'));
+        currentSlidePiercing = (index + slidesPiercing.length) % slidesPiercing.length;
+        slidesPiercing[currentSlidePiercing].classList.add('active');
+        
+        setTimeout(() => {
+            isTransitioningPiercing = false;
+        }, 850);
+    }
+    
+    function nextSlidePiercing() {
+        if (isTransitioningPiercing) return;
+        showSlidePiercing(currentSlidePiercing + 1);
+        resetAutoplayPiercing();
+    }
+    
+    function previousSlidePiercing() {
+        if (isTransitioningPiercing) return;
+        showSlidePiercing(currentSlidePiercing - 1);
+        resetAutoplayPiercing();
+    }
+    
+    function startAutoplayPiercing() {
+        if (slidesPiercing.length <= 1) return;
+        stopAutoplayPiercing();
+        autoplayIntervalPiercing = setInterval(() => {
+            if (!isTransitioningPiercing) {
+                nextSlidePiercing();
+            }
+        }, autoplayDelay);
+    }
+    
+    function stopAutoplayPiercing() {
+        if (autoplayIntervalPiercing) {
+            clearInterval(autoplayIntervalPiercing);
+            autoplayIntervalPiercing = null;
+        }
+    }
+    
+    function resetAutoplayPiercing() {
+        stopAutoplayPiercing();
+        setTimeout(() => {
+            startAutoplayPiercing();
+        }, 100);
+    }
+    
+    // Inicializar carrosséis
+    document.addEventListener('DOMContentLoaded', function() {
+        initCarouselTatuagem();
+        initCarouselPiercing();
+        
+        // Pausar autoplay ao passar o mouse
+        const carouselTatuagem = document.getElementById('carousel-tatuagem');
+        if (carouselTatuagem) {
+            carouselTatuagem.addEventListener('mouseenter', stopAutoplayTatuagem);
+            carouselTatuagem.addEventListener('mouseleave', startAutoplayTatuagem);
+        }
+        
+        const carouselPiercing = document.getElementById('carousel-piercing');
+        if (carouselPiercing) {
+            carouselPiercing.addEventListener('mouseenter', stopAutoplayPiercing);
+            carouselPiercing.addEventListener('mouseleave', startAutoplayPiercing);
+        }
+    });
+    
+    // Navegação por teclado (apenas para o carrossel em foco)
+    document.addEventListener('keydown', function(e) {
+        const activeCarousel = document.querySelector('.portfolio-carousel:hover');
+        if (!activeCarousel) return;
+        
+        if (activeCarousel.id === 'carousel-tatuagem') {
+            if (e.key === 'ArrowLeft') {
+                previousSlideTatuagem();
+            } else if (e.key === 'ArrowRight') {
+                nextSlideTatuagem();
+            }
+        } else if (activeCarousel.id === 'carousel-piercing') {
+            if (e.key === 'ArrowLeft') {
+                previousSlidePiercing();
+            } else if (e.key === 'ArrowRight') {
+                nextSlidePiercing();
+            }
+        }
+    });
+</script>

@@ -1,0 +1,161 @@
+{% extends "core/base.html" %}
+
+{% block title %}Conheça o Estúdio | Skullface Tattoo{% endblock %}
+
+{% block content %}
+
+<section class="estudio-container">
+
+    <div class="estúdio-texto">
+        <h2>Nosso Estudio</h2>
+        <p>
+             É um espaço dedicado ao tatuagem e piercing, com um ambiente acolhedor e profissional.
+            Utilizamos materiais descartáveis,equipamentos esterelizados e seguimos rigorosamente todos os protocolos de segurança.
+        </p>
+    </div>
+
+    <h3>Recepção</h3>
+    <div id="tour-recepcao" class="viewer360" onclick="abrirViewerModal('recepcao')" style="cursor: pointer;" title="Clique para abrir em tela cheia"></div>
+    
+   <h3>Sala de tatuagem e piercing</h3>
+   <div id="tour-sala" class="viewer360" onclick="abrirViewerModal('sala')" style="cursor: pointer;" title="Clique para abrir em tela cheia"></div>
+
+<!-- Modal para viewer em tela cheia -->
+<div id="viewer-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); z-index: 10000; justify-content: center; align-items: center;">
+    <div style="position: relative; width: 95%; height: 95%; max-width: 1400px; max-height: 900px;">
+        <button id="fechar-modal" onclick="fecharViewerModal()" style="position: absolute; top: 20px; right: 20px; background: #f5c400; color: #000; border: none; padding: 12px 24px; border-radius: 6px; font-size: 18px; font-weight: bold; cursor: pointer; z-index: 10001;">✕ Fechar</button>
+        <div id="viewer-modal-container" style="width: 100%; height: 100%;"></div>
+    </div>
+</div>
+
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    let viewerModal = null;
+    const panoramas = {
+        recepcao: '/media/trabalhos/recepcao_360.jpg',
+        sala: '/media/trabalhos/sala_360.jpg'
+    };
+    const viewerConfig = {
+        navbar: ['zoom', 'fullscreen'],
+        defaultLat: 0,
+        defaultLong: 0,
+        minFov: 50,
+        maxFov: 60,
+        fisheye: false,
+        moveSpeed: 1,
+        zoomSpeed: 1,
+        autorotate: false,
+        autorotateSpeed: 0,
+        time_anim: false,
+        mousemove: true,
+        mousewheel: true
+    };
+
+    function abrirViewerModal(tipo) {
+        const modal = document.getElementById('viewer-modal');
+        const container = document.getElementById('viewer-modal-container');
+        if (!modal || !container) return;
+        
+        modal.style.display = 'flex';
+        container.innerHTML = '';
+        
+        try {
+            viewerModal = new PhotoSphereViewer({
+                container: container,
+                panorama: panoramas[tipo],
+                ...viewerConfig
+            });
+        } catch (e) {
+            console.error("Erro ao abrir viewer:", e);
+        }
+    }
+
+    function fecharViewerModal() {
+        const modal = document.getElementById('viewer-modal');
+        if (modal) modal.style.display = 'none';
+        if (viewerModal) {
+            try { viewerModal.destroy(); } catch (e) {}
+            viewerModal = null;
+        }
+        const container = document.getElementById('viewer-modal-container');
+        if (container) container.innerHTML = '';
+    }
+
+    document.addEventListener('click', e => {
+        if (e.target.id === 'viewer-modal') fecharViewerModal();
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') fecharViewerModal();
+    });
+
+    function criarViewer(containerId, panorama) {
+        const container = document.getElementById(containerId);
+        if (!container || typeof PhotoSphereViewer !== 'function') return null;
+        try {
+            // Garantir que usa exatamente as mesmas configurações
+            const config = {
+                container: container,
+                panorama: panorama,
+                navbar: ['zoom', 'fullscreen'],
+                defaultLat: 0,
+                defaultLong: 0,
+                minFov: 50,
+                maxFov: 60,
+                fisheye: false,
+                moveSpeed: 1,
+                zoomSpeed: 1,
+                autorotate: false,
+                autorotateSpeed: 0,
+                time_anim: false,
+                mousemove: true,
+                mousewheel: true,
+                keyboard: true
+            };
+            
+            const viewer = new PhotoSphereViewer(config);
+            
+            // Garantir que os limites de zoom sejam respeitados após inicialização
+            if (viewer) {
+                setTimeout(() => {
+                    if (viewer.prop) {
+                        viewer.prop.min_fov = 50;
+                        viewer.prop.max_fov = 60;
+                    }
+                    // Prevenir movimento quando mouse está fora
+                    container.addEventListener('mouseleave', () => {
+                        if (viewer.stopAutorotate) viewer.stopAutorotate();
+                    });
+                }, 100);
+            }
+            
+            return viewer;
+        } catch (e) {
+            console.error(`Erro ao criar viewer ${containerId}:`, e);
+            return null;
+        }
+    }
+
+    function initViewers() {
+        if (typeof PhotoSphereViewer === 'undefined' || typeof THREE === 'undefined') {
+            setTimeout(initViewers, 100);
+            return;
+        }
+        // Inicializar ambos com exatamente as mesmas configurações
+        criarViewer('tour-recepcao', panoramas.recepcao);
+        setTimeout(() => {
+            criarViewer('tour-sala', panoramas.sala);
+        }, 150);
+    }
+
+    if (document.readyState === 'loading') {
+        window.addEventListener('load', () => setTimeout(initViewers, 200));
+    } else {
+        setTimeout(initViewers, 200);
+    }
+</script>
+{% endblock %}
+                    
