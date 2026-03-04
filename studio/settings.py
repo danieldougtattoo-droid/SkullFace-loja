@@ -55,9 +55,8 @@ try:
     origin = f'http://{local_ip}:8000'
     if origin not in CSRF_TRUSTED_ORIGINS:
         CSRF_TRUSTED_ORIGINS.append(origin)
-        print(f"IP adicionado automaticamente: {origin}")
 except Exception as e:
-    print(f"Erro ao obter IP: {e}")
+    pass
     # Fallback para método antigo
     try:
         local_ip = socket.gethostbyname(socket.gethostname())
