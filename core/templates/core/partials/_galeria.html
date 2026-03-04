@@ -167,7 +167,9 @@
             {% for trabalho in trabalhos_piercing %}
                 {% if trabalho.imagem %}
                 <div class="carousel-slide {% if forloop.first %}active{% endif %}">
-                    <img src="{{ trabalho.imagem.url }}" alt="{{ trabalho.titulo }}">
+                    <img src="{{ trabalho.imagem.url }}" 
+                         alt="{{ trabalho.titulo }}"
+                         onerror="const slide = this.parentElement; slide.remove(); const carousel = document.getElementById('carousel-piercing'); if(carousel) { const remainingSlides = carousel.querySelectorAll('.carousel-slide'); if(remainingSlides.length > 0 && !carousel.querySelector('.carousel-slide.active')) { remainingSlides[0].classList.add('active'); } if(typeof slidesPiercing !== 'undefined') { slidesPiercing = remainingSlides; } }">
                 </div>
                 {% endif %}
             {% endfor %}
@@ -262,18 +264,64 @@
         const carousel = document.getElementById('carousel-piercing');
         if (!carousel) return;
         
-        slidesPiercing = carousel.querySelectorAll('.carousel-slide');
-        startAutoplayPiercing();
+        // Aguardar um pouco para que as imagens tentem carregar
+        setTimeout(() => {
+            // Remover slides que foram escondidos pelo onerror
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            slides.forEach(slide => {
+                const img = slide.querySelector('img');
+                // Remover se a imagem não existe, não tem src, ou foi escondida
+                if (!img || !img.src || img.style.display === 'none' || slide.style.display === 'none') {
+                    slide.remove();
+                }
+            });
+            
+            // Atualizar lista de slides após remover os vazios
+            slidesPiercing = carousel.querySelectorAll('.carousel-slide');
+            
+            // Se não houver slides válidos, esconder o carrossel
+            if (slidesPiercing.length === 0) {
+                carousel.closest('.portfolio-section').style.display = 'none';
+                return;
+            }
+            
+            // Garantir que pelo menos um slide esteja ativo
+            const activeSlide = carousel.querySelector('.carousel-slide.active');
+            if (!activeSlide && slidesPiercing.length > 0) {
+                slidesPiercing[0].classList.add('active');
+            }
+            
+            // Resetar índice atual se necessário
+            if (slidesPiercing.length > 0) {
+                currentSlidePiercing = 0;
+            }
+            
+            startAutoplayPiercing();
+        }, 100);
     }
     
     function showSlidePiercing(index) {
+        // Atualizar lista de slides (caso algum tenha sido removido)
+        const carousel = document.getElementById('carousel-piercing');
+        if (carousel) {
+            slidesPiercing = carousel.querySelectorAll('.carousel-slide');
+        }
+        
         if (slidesPiercing.length === 0 || isTransitioningPiercing) return;
         
         isTransitioningPiercing = true;
         
         slidesPiercing.forEach(slide => slide.classList.remove('active'));
         currentSlidePiercing = (index + slidesPiercing.length) % slidesPiercing.length;
-        slidesPiercing[currentSlidePiercing].classList.add('active');
+        
+        // Garantir que o índice está dentro dos limites
+        if (currentSlidePiercing >= slidesPiercing.length) {
+            currentSlidePiercing = 0;
+        }
+        
+        if (slidesPiercing[currentSlidePiercing]) {
+            slidesPiercing[currentSlidePiercing].classList.add('active');
+        }
         
         setTimeout(() => {
             isTransitioningPiercing = false;

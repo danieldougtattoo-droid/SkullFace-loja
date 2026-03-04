@@ -9,11 +9,12 @@ def home(request):
         artista__nome__icontains='ester'
     ).order_by('-id')
     
-    # Buscar trabalhos de piercing (Ester)
+    # Buscar trabalhos de piercing (Ester) - apenas com imagem válida
     trabalhos_piercing = Trabalho.objects.filter(
         publicado=True,
-        artista__nome__icontains='ester'
-    ).order_by('-id')
+        artista__nome__icontains='ester',
+        imagem__isnull=False
+    ).exclude(imagem='').order_by('-id')
      
     # Buscar produtos ativos para a loja
     produtos = Produto.objects.filter(ativo=True).order_by('nome')
