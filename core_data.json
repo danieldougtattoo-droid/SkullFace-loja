@@ -356,10 +356,10 @@
     "model": "core.trabalho",
     "pk": 25,
     "fields": {
-      "titulo": "y",
+      "titulo": "helux",
       "artista": 1,
       "estilo": 2,
-      "imagem": "trabalhos/Screenshot_20250227_130200_Instagram.jpg",
+      "imagem": "trabalhos/helux.jpg",
       "publicado": true,
       "criado_em": "2026-01-15T21:22:03.300Z",
       "destaque": false
@@ -369,10 +369,10 @@
     "model": "core.trabalho",
     "pk": 26,
     "fields": {
-      "titulo": "lk",
+      "titulo": "surface",
       "artista": 1,
       "estilo": 1,
-      "imagem": "trabalhos/Screenshot_20231103_141856_Instagram.jpg",
+      "imagem": "trabalhos/surface.jpg",
       "publicado": true,
       "criado_em": "2026-01-15T21:28:57.280Z",
       "destaque": false
@@ -382,10 +382,10 @@
     "model": "core.trabalho",
     "pk": 27,
     "fields": {
-      "titulo": "sd",
+      "titulo": "sombran",
       "artista": 1,
       "estilo": 2,
-      "imagem": "trabalhos/Screenshot_20230711_161513_Instagram.jpg",
+      "imagem": "trabalhos/sombran.jpg",
       "publicado": true,
       "criado_em": "2026-01-15T21:29:25.429Z",
       "destaque": false
@@ -395,10 +395,10 @@
     "model": "core.trabalho",
     "pk": 28,
     "fields": {
-      "titulo": "w",
+      "titulo": "conch",
       "artista": 1,
       "estilo": 2,
-      "imagem": "trabalhos/Screenshot_20230704_153854_Instagram.jpg",
+      "imagem": "trabalhos/conch.jpg",
       "publicado": true,
       "criado_em": "2026-01-15T21:29:55.719Z",
       "destaque": false
@@ -408,10 +408,10 @@
     "model": "core.trabalho",
     "pk": 29,
     "fields": {
-      "titulo": "ds",
+      "titulo": "nostril",
       "artista": 1,
       "estilo": 1,
-      "imagem": "trabalhos/Screenshot_20230607_140835_Instagram.jpg",
+      "imagem": "trabalhos/nostril.jpg",
       "publicado": true,
       "criado_em": "2026-01-15T21:43:10.500Z",
       "destaque": false
