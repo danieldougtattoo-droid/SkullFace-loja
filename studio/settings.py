@@ -76,6 +76,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -120,7 +122,14 @@ DATABASES = {
         ssl_require=os.environ.get('DATABASE_SSL_REQUIRE', 'False').lower() == 'true'
     )
 }
+ 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dtnOquOh7',
+    'API_KEY': '614392948124382',
+    'API_SECRET':  'oAfPb48ee5rh5ZsudAqfwj9tGnM',
+}
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
