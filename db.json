@@ -1,2081 +1,4 @@
-[
-{
-  "model": "admin.logentry",
-  "pk": 1,
-  "fields": {
-    "action_time": "2026-01-09T20:14:11.121Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "1",
-    "object_repr": "Doug Tattoo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 2,
-  "fields": {
-    "action_time": "2026-01-09T20:41:08.616Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "1",
-    "object_repr": "Dragon",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 3,
-  "fields": {
-    "action_time": "2026-01-13T17:53:04.026Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "1",
-    "object_repr": "Dragon",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 4,
-  "fields": {
-    "action_time": "2026-01-13T18:13:26.695Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "1",
-    "object_repr": "Realismo - Preto e Cinza",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 5,
-  "fields": {
-    "action_time": "2026-01-13T18:15:14.917Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "1",
-    "object_repr": "Ante bra├ºo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 6,
-  "fields": {
-    "action_time": "2026-01-13T18:41:56.815Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "2",
-    "object_repr": "Delicadas",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 7,
-  "fields": {
-    "action_time": "2026-01-13T18:42:59.893Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "2",
-    "object_repr": "Tatuagens femininas",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 8,
-  "fields": {
-    "action_time": "2026-01-13T18:43:33.671Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "3",
-    "object_repr": "Tatuagens femininas",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 9,
-  "fields": {
-    "action_time": "2026-01-14T20:46:03.342Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "3",
-    "object_repr": "Old-School",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 10,
-  "fields": {
-    "action_time": "2026-01-14T20:46:51.978Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "4",
-    "object_repr": "PER",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 11,
-  "fields": {
-    "action_time": "2026-01-14T20:48:09.839Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "4",
-    "object_repr": "Realismo Colorido",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 12,
-  "fields": {
-    "action_time": "2026-01-14T20:48:35.339Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "5",
-    "object_repr": "py",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 13,
-  "fields": {
-    "action_time": "2026-01-14T20:49:03.231Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "6",
-    "object_repr": "r",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 14,
-  "fields": {
-    "action_time": "2026-01-14T21:15:52.143Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "2",
-    "object_repr": "Ester-Piercing",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 15,
-  "fields": {
-    "action_time": "2026-01-14T21:16:24.449Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "3",
-    "object_repr": "Piercings",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 16,
-  "fields": {
-    "action_time": "2026-01-14T21:29:02.838Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "5",
-    "object_repr": "Piercing",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 17,
-  "fields": {
-    "action_time": "2026-01-14T21:29:35.945Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "7",
-    "object_repr": "wer",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 18,
-  "fields": {
-    "action_time": "2026-01-14T21:30:00.530Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "8",
-    "object_repr": "rr",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 19,
-  "fields": {
-    "action_time": "2026-01-14T21:30:23.458Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "9",
-    "object_repr": "sd",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 20,
-  "fields": {
-    "action_time": "2026-01-15T20:47:37.580Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "10",
-    "object_repr": "gf",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 21,
-  "fields": {
-    "action_time": "2026-01-15T20:48:16.934Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "11",
-    "object_repr": "├ºl",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 22,
-  "fields": {
-    "action_time": "2026-01-15T20:48:56.446Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "12",
-    "object_repr": "ff",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 23,
-  "fields": {
-    "action_time": "2026-01-15T20:49:28.689Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "13",
-    "object_repr": "lk",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 24,
-  "fields": {
-    "action_time": "2026-01-15T20:49:48.053Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "14",
-    "object_repr": "ee",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 25,
-  "fields": {
-    "action_time": "2026-01-15T21:01:18.713Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "15",
-    "object_repr": "rr",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 26,
-  "fields": {
-    "action_time": "2026-01-15T21:01:43.102Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "16",
-    "object_repr": "ee",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 27,
-  "fields": {
-    "action_time": "2026-01-15T21:04:52.634Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "9",
-    "object_repr": "sd",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 28,
-  "fields": {
-    "action_time": "2026-01-15T21:05:02.658Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "7",
-    "object_repr": "wer",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 29,
-  "fields": {
-    "action_time": "2026-01-15T21:05:14.887Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "8",
-    "object_repr": "rr",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 30,
-  "fields": {
-    "action_time": "2026-01-15T21:06:33.597Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "17",
-    "object_repr": "p",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 31,
-  "fields": {
-    "action_time": "2026-01-15T21:06:57.238Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "18",
-    "object_repr": "o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 32,
-  "fields": {
-    "action_time": "2026-01-15T21:07:22.788Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "19",
-    "object_repr": "i",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 33,
-  "fields": {
-    "action_time": "2026-01-15T21:07:51.748Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "20",
-    "object_repr": "d",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 34,
-  "fields": {
-    "action_time": "2026-01-15T21:08:12.274Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "21",
-    "object_repr": "s",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 35,
-  "fields": {
-    "action_time": "2026-01-15T21:20:26.234Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "22",
-    "object_repr": "z",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 36,
-  "fields": {
-    "action_time": "2026-01-15T21:21:19.329Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "23",
-    "object_repr": "i",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 37,
-  "fields": {
-    "action_time": "2026-01-15T21:21:44.238Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "24",
-    "object_repr": "y",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 38,
-  "fields": {
-    "action_time": "2026-01-15T21:22:03.306Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "25",
-    "object_repr": "y",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 39,
-  "fields": {
-    "action_time": "2026-01-15T21:28:57.286Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "26",
-    "object_repr": "lk",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 40,
-  "fields": {
-    "action_time": "2026-01-15T21:29:25.437Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "27",
-    "object_repr": "sd",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 41,
-  "fields": {
-    "action_time": "2026-01-15T21:29:55.726Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "28",
-    "object_repr": "w",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 42,
-  "fields": {
-    "action_time": "2026-01-15T21:43:10.508Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "29",
-    "object_repr": "ds",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 43,
-  "fields": {
-    "action_time": "2026-01-15T21:43:38.695Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "30",
-    "object_repr": "aranha",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 44,
-  "fields": {
-    "action_time": "2026-01-15T21:44:39.948Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "6",
-    "object_repr": "Oriental",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 45,
-  "fields": {
-    "action_time": "2026-01-15T21:45:12.960Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "31",
-    "object_repr": "costas phoenix",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 46,
-  "fields": {
-    "action_time": "2026-01-15T21:45:42.057Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "32",
-    "object_repr": "costas dragon",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 47,
-  "fields": {
-    "action_time": "2026-01-31T20:34:00.088Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "33",
-    "object_repr": "esfinge",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 48,
-  "fields": {
-    "action_time": "2026-01-31T20:34:49.750Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "34",
-    "object_repr": "cats",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 49,
-  "fields": {
-    "action_time": "2026-01-31T20:35:08.157Z",
-    "user": 2,
-    "content_type": 9,
-    "object_id": "7",
-    "object_repr": "dark",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 50,
-  "fields": {
-    "action_time": "2026-01-31T20:35:51.683Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "35",
-    "object_repr": "hand",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 51,
-  "fields": {
-    "action_time": "2026-01-31T20:36:37.489Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "36",
-    "object_repr": "arm",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 52,
-  "fields": {
-    "action_time": "2026-01-31T20:54:18.223Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "37",
-    "object_repr": "conch",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 53,
-  "fields": {
-    "action_time": "2026-01-31T20:55:28.672Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "38",
-    "object_repr": "helix",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 54,
-  "fields": {
-    "action_time": "2026-01-31T20:57:22.088Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "37",
-    "object_repr": "conch",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 55,
-  "fields": {
-    "action_time": "2026-01-31T20:58:20.163Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "39",
-    "object_repr": "fbra├ºo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 56,
-  "fields": {
-    "action_time": "2026-01-31T20:58:49.929Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "40",
-    "object_repr": "pinterna",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 57,
-  "fields": {
-    "action_time": "2026-02-02T19:53:15.601Z",
-    "user": 2,
-    "content_type": 10,
-    "object_id": "1",
-    "object_repr": "piercings",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 58,
-  "fields": {
-    "action_time": "2026-02-02T19:56:42.101Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "1",
-    "object_repr": "piercing-labret",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 59,
-  "fields": {
-    "action_time": "2026-02-02T19:58:41.586Z",
-    "user": 2,
-    "content_type": 11,
-    "object_id": "1",
-    "object_repr": "Pipe Langmore",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 60,
-  "fields": {
-    "action_time": "2026-02-02T20:00:21.413Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "1",
-    "object_repr": "Pedido #1 - Pipe Langmore",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 61,
-  "fields": {
-    "action_time": "2026-02-02T21:27:12.049Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "1",
-    "object_repr": "Pedido #1 - Pipe Langmore",
-    "action_flag": 2,
-    "change_message": "[{\"added\": {\"name\": \"item pedido\", \"object\": \"ItemPedido object (1)\"}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 62,
-  "fields": {
-    "action_time": "2026-02-03T16:01:25.090Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "2",
-    "object_repr": "Pedido #2 - Pipe Langmore",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"item pedido\", \"object\": \"ItemPedido object (2)\"}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 63,
-  "fields": {
-    "action_time": "2026-02-03T16:02:23.609Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "1",
-    "object_repr": "Pedido #1 - Pipe Langmore",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"name\": \"item pedido\", \"object\": \"ItemPedido object (1)\", \"fields\": [\"Quantidade\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 64,
-  "fields": {
-    "action_time": "2026-02-03T17:08:24.626Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "3",
-    "object_repr": "Pedido #3 - Pipe Langmore",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 65,
-  "fields": {
-    "action_time": "2026-02-03T17:09:28.677Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "3",
-    "object_repr": "Pedido #3 - Pipe Langmore",
-    "action_flag": 2,
-    "change_message": "[{\"added\": {\"name\": \"item pedido\", \"object\": \"ItemPedido object (3)\"}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 66,
-  "fields": {
-    "action_time": "2026-02-03T17:11:10.367Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "3",
-    "object_repr": "Pedido #3 - Pipe Langmore",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"name\": \"item pedido\", \"object\": \"ItemPedido object (3)\", \"fields\": [\"Quantidade\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 67,
-  "fields": {
-    "action_time": "2026-02-03T17:12:56.192Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "2",
-    "object_repr": "conch",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 68,
-  "fields": {
-    "action_time": "2026-02-03T17:13:35.242Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "3",
-    "object_repr": "Pedido #3 - Pipe Langmore",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"name\": \"item pedido\", \"object\": \"ItemPedido object (3)\", \"fields\": [\"Produto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 69,
-  "fields": {
-    "action_time": "2026-02-03T17:14:17.879Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "3",
-    "object_repr": "Pedido #3 - Pipe Langmore",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 70,
-  "fields": {
-    "action_time": "2026-02-03T17:15:17.972Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "4",
-    "object_repr": "Pedido #4 - Pipe Langmore",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"item pedido\", \"object\": \"ItemPedido object (4)\"}}, {\"added\": {\"name\": \"item pedido\", \"object\": \"ItemPedido object (5)\"}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 71,
-  "fields": {
-    "action_time": "2026-02-03T17:16:28.796Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "4",
-    "object_repr": "Pedido #4 - Pipe Langmore",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 72,
-  "fields": {
-    "action_time": "2026-02-03T17:17:11.449Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "1",
-    "object_repr": "Pedido #1 - Pipe Langmore",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 73,
-  "fields": {
-    "action_time": "2026-02-12T20:12:31.735Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "3",
-    "object_repr": "Argola",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 74,
-  "fields": {
-    "action_time": "2026-02-12T20:22:35.918Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "4",
-    "object_repr": "Labret",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 75,
-  "fields": {
-    "action_time": "2026-02-12T20:23:59.028Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "5",
-    "object_repr": "Labret dourado",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 76,
-  "fields": {
-    "action_time": "2026-02-12T20:27:35.744Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "6",
-    "object_repr": "Labret brilho retangular",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 77,
-  "fields": {
-    "action_time": "2026-02-12T20:30:39.024Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "7",
-    "object_repr": "Labret Estrelas",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 78,
-  "fields": {
-    "action_time": "2026-02-12T20:39:46.211Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "4",
-    "object_repr": "Pedido #4 - Pipe Langmore",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 79,
-  "fields": {
-    "action_time": "2026-02-12T20:39:54.474Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "2",
-    "object_repr": "Pedido #2 - Pipe Langmore",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 80,
-  "fields": {
-    "action_time": "2026-02-12T20:39:59.848Z",
-    "user": 2,
-    "content_type": 14,
-    "object_id": "1",
-    "object_repr": "Pedido #1 - Pipe Langmore",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 81,
-  "fields": {
-    "action_time": "2026-02-12T20:40:09.729Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "2",
-    "object_repr": "conch",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 82,
-  "fields": {
-    "action_time": "2026-02-12T20:40:25.858Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "1",
-    "object_repr": "piercing-labret",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 83,
-  "fields": {
-    "action_time": "2026-02-20T21:36:44.989Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "3",
-    "object_repr": "Argola",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 84,
-  "fields": {
-    "action_time": "2026-02-26T22:41:25.612Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "7",
-    "object_repr": "Labret Estrelas",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 85,
-  "fields": {
-    "action_time": "2026-02-26T22:42:07.806Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "6",
-    "object_repr": "Labret brilho retangular",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 86,
-  "fields": {
-    "action_time": "2026-02-26T22:43:00.217Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "4",
-    "object_repr": "Labret",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 87,
-  "fields": {
-    "action_time": "2026-02-26T22:43:44.870Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "5",
-    "object_repr": "Labret dourado",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 88,
-  "fields": {
-    "action_time": "2026-03-03T12:33:14.189Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "8",
-    "object_repr": "arg dupla com brilhante",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 89,
-  "fields": {
-    "action_time": "2026-03-03T12:39:24.260Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "9",
-    "object_repr": "arg cruz com pedra",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 90,
-  "fields": {
-    "action_time": "2026-03-03T12:46:46.548Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "10",
-    "object_repr": "labret closter",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 91,
-  "fields": {
-    "action_time": "2026-03-03T12:55:13.102Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "11",
-    "object_repr": "labret sol",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 92,
-  "fields": {
-    "action_time": "2026-03-03T13:01:03.835Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "12",
-    "object_repr": "arg dupla com adorno",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 93,
-  "fields": {
-    "action_time": "2026-03-03T13:06:12.242Z",
-    "user": 2,
-    "content_type": 15,
-    "object_id": "13",
-    "object_repr": "arg crav frontal",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 94,
-  "fields": {
-    "action_time": "2026-03-04T16:56:06.094Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "21",
-    "object_repr": "s",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 95,
-  "fields": {
-    "action_time": "2026-03-04T16:56:24.245Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "20",
-    "object_repr": "d",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 96,
-  "fields": {
-    "action_time": "2026-03-04T16:56:38.602Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "19",
-    "object_repr": "i",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 97,
-  "fields": {
-    "action_time": "2026-03-04T16:56:48.687Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "18",
-    "object_repr": "o",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 98,
-  "fields": {
-    "action_time": "2026-03-04T16:57:06.020Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "17",
-    "object_repr": "p",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 99,
-  "fields": {
-    "action_time": "2026-03-04T16:58:16.150Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "41",
-    "object_repr": "conch",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 100,
-  "fields": {
-    "action_time": "2026-03-04T16:59:10.610Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "42",
-    "object_repr": "helix2",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 101,
-  "fields": {
-    "action_time": "2026-03-04T16:59:51.746Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "43",
-    "object_repr": "nostril",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 102,
-  "fields": {
-    "action_time": "2026-03-04T17:00:28.473Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "44",
-    "object_repr": "sombranc",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 103,
-  "fields": {
-    "action_time": "2026-03-04T17:01:01.925Z",
-    "user": 2,
-    "content_type": 8,
-    "object_id": "45",
-    "object_repr": "surface",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 1,
-  "fields": {
-    "name": "Can add log entry",
-    "content_type": 1,
-    "codename": "add_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 2,
-  "fields": {
-    "name": "Can change log entry",
-    "content_type": 1,
-    "codename": "change_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 3,
-  "fields": {
-    "name": "Can delete log entry",
-    "content_type": 1,
-    "codename": "delete_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 4,
-  "fields": {
-    "name": "Can view log entry",
-    "content_type": 1,
-    "codename": "view_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 5,
-  "fields": {
-    "name": "Can add permission",
-    "content_type": 3,
-    "codename": "add_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 6,
-  "fields": {
-    "name": "Can change permission",
-    "content_type": 3,
-    "codename": "change_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 7,
-  "fields": {
-    "name": "Can delete permission",
-    "content_type": 3,
-    "codename": "delete_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 8,
-  "fields": {
-    "name": "Can view permission",
-    "content_type": 3,
-    "codename": "view_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 9,
-  "fields": {
-    "name": "Can add group",
-    "content_type": 2,
-    "codename": "add_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 10,
-  "fields": {
-    "name": "Can change group",
-    "content_type": 2,
-    "codename": "change_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 11,
-  "fields": {
-    "name": "Can delete group",
-    "content_type": 2,
-    "codename": "delete_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 12,
-  "fields": {
-    "name": "Can view group",
-    "content_type": 2,
-    "codename": "view_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 13,
-  "fields": {
-    "name": "Can add user",
-    "content_type": 4,
-    "codename": "add_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 14,
-  "fields": {
-    "name": "Can change user",
-    "content_type": 4,
-    "codename": "change_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 15,
-  "fields": {
-    "name": "Can delete user",
-    "content_type": 4,
-    "codename": "delete_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 16,
-  "fields": {
-    "name": "Can view user",
-    "content_type": 4,
-    "codename": "view_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 17,
-  "fields": {
-    "name": "Can add content type",
-    "content_type": 5,
-    "codename": "add_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 18,
-  "fields": {
-    "name": "Can change content type",
-    "content_type": 5,
-    "codename": "change_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 19,
-  "fields": {
-    "name": "Can delete content type",
-    "content_type": 5,
-    "codename": "delete_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 20,
-  "fields": {
-    "name": "Can view content type",
-    "content_type": 5,
-    "codename": "view_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 21,
-  "fields": {
-    "name": "Can add session",
-    "content_type": 6,
-    "codename": "add_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 22,
-  "fields": {
-    "name": "Can change session",
-    "content_type": 6,
-    "codename": "change_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 23,
-  "fields": {
-    "name": "Can delete session",
-    "content_type": 6,
-    "codename": "delete_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 24,
-  "fields": {
-    "name": "Can view session",
-    "content_type": 6,
-    "codename": "view_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 25,
-  "fields": {
-    "name": "Can add artista",
-    "content_type": 7,
-    "codename": "add_artista"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 26,
-  "fields": {
-    "name": "Can change artista",
-    "content_type": 7,
-    "codename": "change_artista"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 27,
-  "fields": {
-    "name": "Can delete artista",
-    "content_type": 7,
-    "codename": "delete_artista"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 28,
-  "fields": {
-    "name": "Can view artista",
-    "content_type": 7,
-    "codename": "view_artista"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 29,
-  "fields": {
-    "name": "Can add trabalho",
-    "content_type": 8,
-    "codename": "add_trabalho"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 30,
-  "fields": {
-    "name": "Can change trabalho",
-    "content_type": 8,
-    "codename": "change_trabalho"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 31,
-  "fields": {
-    "name": "Can delete trabalho",
-    "content_type": 8,
-    "codename": "delete_trabalho"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 32,
-  "fields": {
-    "name": "Can view trabalho",
-    "content_type": 8,
-    "codename": "view_trabalho"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 33,
-  "fields": {
-    "name": "Can add estilo",
-    "content_type": 9,
-    "codename": "add_estilo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 34,
-  "fields": {
-    "name": "Can change estilo",
-    "content_type": 9,
-    "codename": "change_estilo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 35,
-  "fields": {
-    "name": "Can delete estilo",
-    "content_type": 9,
-    "codename": "delete_estilo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 36,
-  "fields": {
-    "name": "Can view estilo",
-    "content_type": 9,
-    "codename": "view_estilo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 37,
-  "fields": {
-    "name": "Can add pedido",
-    "content_type": 14,
-    "codename": "add_pedido"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 38,
-  "fields": {
-    "name": "Can change pedido",
-    "content_type": 14,
-    "codename": "change_pedido"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 39,
-  "fields": {
-    "name": "Can delete pedido",
-    "content_type": 14,
-    "codename": "delete_pedido"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 40,
-  "fields": {
-    "name": "Can view pedido",
-    "content_type": 14,
-    "codename": "view_pedido"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 41,
-  "fields": {
-    "name": "Can add pagamento",
-    "content_type": 13,
-    "codename": "add_pagamento"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 42,
-  "fields": {
-    "name": "Can change pagamento",
-    "content_type": 13,
-    "codename": "change_pagamento"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 43,
-  "fields": {
-    "name": "Can delete pagamento",
-    "content_type": 13,
-    "codename": "delete_pagamento"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 44,
-  "fields": {
-    "name": "Can view pagamento",
-    "content_type": 13,
-    "codename": "view_pagamento"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 45,
-  "fields": {
-    "name": "Can add produto",
-    "content_type": 15,
-    "codename": "add_produto"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 46,
-  "fields": {
-    "name": "Can change produto",
-    "content_type": 15,
-    "codename": "change_produto"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 47,
-  "fields": {
-    "name": "Can delete produto",
-    "content_type": 15,
-    "codename": "delete_produto"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 48,
-  "fields": {
-    "name": "Can view produto",
-    "content_type": 15,
-    "codename": "view_produto"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 49,
-  "fields": {
-    "name": "Can add item pedido",
-    "content_type": 12,
-    "codename": "add_itempedido"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 50,
-  "fields": {
-    "name": "Can change item pedido",
-    "content_type": 12,
-    "codename": "change_itempedido"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 51,
-  "fields": {
-    "name": "Can delete item pedido",
-    "content_type": 12,
-    "codename": "delete_itempedido"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 52,
-  "fields": {
-    "name": "Can view item pedido",
-    "content_type": 12,
-    "codename": "view_itempedido"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 53,
-  "fields": {
-    "name": "Can add categoria",
-    "content_type": 10,
-    "codename": "add_categoria"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 54,
-  "fields": {
-    "name": "Can change categoria",
-    "content_type": 10,
-    "codename": "change_categoria"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 55,
-  "fields": {
-    "name": "Can delete categoria",
-    "content_type": 10,
-    "codename": "delete_categoria"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 56,
-  "fields": {
-    "name": "Can view categoria",
-    "content_type": 10,
-    "codename": "view_categoria"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 57,
-  "fields": {
-    "name": "Can add cliente",
-    "content_type": 11,
-    "codename": "add_cliente"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 58,
-  "fields": {
-    "name": "Can change cliente",
-    "content_type": 11,
-    "codename": "change_cliente"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 59,
-  "fields": {
-    "name": "Can delete cliente",
-    "content_type": 11,
-    "codename": "delete_cliente"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 60,
-  "fields": {
-    "name": "Can view cliente",
-    "content_type": 11,
-    "codename": "view_cliente"
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$1200000$WEhxqbPjWp8xdXASmBB9UR$OO9fKhNeCuyunELDXONB3QH4/98czeVQHIgv27SIp6U=",
-    "last_login": "2026-01-09T19:19:51.066Z",
-    "is_superuser": true,
-    "username": "Daniel",
-    "first_name": "",
-    "last_name": "",
-    "email": "danieldougtattoo@gmail.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-01-09T18:34:38.903Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 2,
-  "fields": {
-    "password": "pbkdf2_sha256$1200000$fgucIMSftRyKVwrwIwbKr3$8WUk5Su9td/CihbpJeuyszlRmLpcdjLs+z0bFFSy1EM=",
-    "last_login": "2026-02-20T21:33:15.781Z",
-    "is_superuser": true,
-    "username": "doug",
-    "first_name": "",
-    "last_name": "",
-    "email": "",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-01-31T20:27:29.607Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$1200000$BCMBuxuWNYhC3hUsb6G3qx$I33WbRlq/C/iZlGnBugn52wOYdUa6EcVp1WJOY+p31I=",
-    "last_login": null,
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "admin@email.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-03-04T19:06:04.907Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 1,
-  "fields": {
-    "app_label": "admin",
-    "model": "logentry"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 2,
-  "fields": {
-    "app_label": "auth",
-    "model": "group"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 3,
-  "fields": {
-    "app_label": "auth",
-    "model": "permission"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 4,
-  "fields": {
-    "app_label": "auth",
-    "model": "user"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 5,
-  "fields": {
-    "app_label": "contenttypes",
-    "model": "contenttype"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 6,
-  "fields": {
-    "app_label": "sessions",
-    "model": "session"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 7,
-  "fields": {
-    "app_label": "core",
-    "model": "artista"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 8,
-  "fields": {
-    "app_label": "core",
-    "model": "trabalho"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 9,
-  "fields": {
-    "app_label": "core",
-    "model": "estilo"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 10,
-  "fields": {
-    "app_label": "core",
-    "model": "categoria"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 11,
-  "fields": {
-    "app_label": "core",
-    "model": "cliente"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 12,
-  "fields": {
-    "app_label": "core",
-    "model": "itempedido"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 13,
-  "fields": {
-    "app_label": "core",
-    "model": "pagamento"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 14,
-  "fields": {
-    "app_label": "core",
-    "model": "pedido"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 15,
-  "fields": {
-    "app_label": "core",
-    "model": "produto"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "7eahvhmsmp2kc4rjuxmszp5f5d0m7z9q",
-  "fields": {
-    "session_data": ".eJxVjEEOwiAQAP-yZ0MKLWXp0btvIAvsStWUpLQn499Nkx70OjOZNwTatxL2xmuYM0xg4PLLIqUnL4fID1ruVaW6bOsc1ZGo0zZ1q5lf17P9GxRqBSbAjtn3EgckQS3OIWZJxowS-1FnHnzn9IA9WRYUb3VCPbITS87azib4fAHrkjfL:1vmHZz:9SjxKazTz3ge3eC1Lek3cmv99FiHnJJSSn9qiJqno9c",
-    "expire_date": "2026-02-14T20:28:27.312Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "kfwdc368vqz57tl6klwbyv1e3k2k9kul",
-  "fields": {
-    "session_data": ".eJxVjEEOwiAQAP-yZ0MKLWXp0btvIAvsStWUpLQn499Nkx70OjOZNwTatxL2xmuYM0xg4PLLIqUnL4fID1ruVaW6bOsc1ZGo0zZ1q5lf17P9GxRqBSbAjtn3EgckQS3OIWZJxowS-1FnHnzn9IA9WRYUb3VCPbITS87azib4fAHrkjfL:1vtY7f:gOuAl0-P4OSoudR9BqCBbzy6VV72Jnq9xO8F_a6JuBw",
-    "expire_date": "2026-03-06T21:33:15.800Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "vq2czyhy12x94kl5u4jgdosxe1ce6kn9",
-  "fields": {
-    "session_data": ".eJxVjDEKwzAMAP-iuRhbjeyQsXvfYGTJrtOWBOJkCv17CWRo17vjdoi8rTVuLS9xVBjAweWXJZZXng6hT54es5F5WpcxmSMxp23mPmt-3872b1C5VRggdEIaiLyixytbmzukXlNfOi4i4iynULAPPhE7mwV9CkiOWEtGYvh8Ad40OBw:1veI1X:4fDYTBcy2quogssQdc1LdeDVkU3kHaROYvwGR99QSLM",
-    "expire_date": "2026-01-23T19:19:51.082Z"
-  }
-},
+﻿[
 {
   "model": "core.artista",
   "pk": 1,
@@ -2163,7 +86,7 @@
     "titulo": "Ante bra├ºo",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/loja1.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674717/q2onkvqlipfmrwr4m6cb.jpg",
     "publicado": true,
     "criado_em": "2026-01-13T18:15:14.912Z",
     "destaque": false
@@ -2176,7 +99,7 @@
     "titulo": "Tatuagens femininas",
     "artista": 1,
     "estilo": 2,
-    "imagem": "trabalhos/loja2.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674718/q3esfmb8kmtuw11nqctl.jpg",
     "publicado": true,
     "criado_em": "2026-01-13T18:42:59.885Z",
     "destaque": false
@@ -2189,7 +112,7 @@
     "titulo": "Tatuagens femininas",
     "artista": 1,
     "estilo": 2,
-    "imagem": "trabalhos/loja3.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674718/xkmhqs4xgjgizg52apk6.jpg",
     "publicado": true,
     "criado_em": "2026-01-13T18:43:33.665Z",
     "destaque": false
@@ -2202,7 +125,7 @@
     "titulo": "PER",
     "artista": 1,
     "estilo": 3,
-    "imagem": "trabalhos/skullfacetattoo-20260114-0004.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674719/b7a3mtr2zw2ncyxozk3h.webp",
     "publicado": true,
     "criado_em": "2026-01-14T20:46:51.970Z",
     "destaque": false
@@ -2215,7 +138,7 @@
     "titulo": "py",
     "artista": 1,
     "estilo": 4,
-    "imagem": "trabalhos/skullfacetattoo-20260114-0001.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674720/ovgokqnmruy3zpa2gswr.webp",
     "publicado": true,
     "criado_em": "2026-01-14T20:48:35.333Z",
     "destaque": false
@@ -2228,7 +151,7 @@
     "titulo": "r",
     "artista": 1,
     "estilo": 4,
-    "imagem": "trabalhos/skullfacetattoo-20260114-0005.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674720/fheynsgw4qioneguvjhb.webp",
     "publicado": true,
     "criado_em": "2026-01-14T20:49:03.224Z",
     "destaque": false
@@ -2241,7 +164,7 @@
     "titulo": "gf",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/skullfacetattoo-20260114-0002.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674721/vhqsobfldreouajr0hgb.webp",
     "publicado": true,
     "criado_em": "2026-01-15T20:47:37.572Z",
     "destaque": false
@@ -2254,7 +177,7 @@
     "titulo": "├ºl",
     "artista": 1,
     "estilo": 4,
-    "imagem": "trabalhos/Screenshot_20240625_134807_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674722/ikgembuiv5kxdwi0ze2v.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T20:48:16.927Z",
     "destaque": false
@@ -2267,7 +190,7 @@
     "titulo": "ff",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/Screenshot_20241205_185827_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674723/l3yvsvmyisx0f2l5ilel.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T20:48:56.436Z",
     "destaque": false
@@ -2280,7 +203,7 @@
     "titulo": "lk",
     "artista": 1,
     "estilo": 4,
-    "imagem": "trabalhos/Screenshot_20250114_193315_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674723/bi7ky7wbuqpqcwnb2ofj.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T20:49:28.682Z",
     "destaque": false
@@ -2293,7 +216,7 @@
     "titulo": "ee",
     "artista": 1,
     "estilo": 2,
-    "imagem": "trabalhos/Screenshot_20250424_134153_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674724/li7hcjj5runnotrdq6bn.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T20:49:48.047Z",
     "destaque": false
@@ -2306,7 +229,7 @@
     "titulo": "rr",
     "artista": 1,
     "estilo": 3,
-    "imagem": "trabalhos/skullfacetattoo-20260115-0001.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674725/xbuetfq2z3rccscq9j3n.webp",
     "publicado": true,
     "criado_em": "2026-01-15T21:01:18.704Z",
     "destaque": false
@@ -2319,7 +242,7 @@
     "titulo": "ee",
     "artista": 1,
     "estilo": 3,
-    "imagem": "trabalhos/skullfacetattoo-20260115-0002.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674725/pyay43y7hgoudgblznxh.webp",
     "publicado": true,
     "criado_em": "2026-01-15T21:01:43.096Z",
     "destaque": false
@@ -2332,7 +255,7 @@
     "titulo": "z",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/Screenshot_20240103_231738_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674726/ccmjyo3rpl9wul8vluff.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:20:26.228Z",
     "destaque": false
@@ -2345,7 +268,7 @@
     "titulo": "i",
     "artista": 1,
     "estilo": 4,
-    "imagem": "trabalhos/Screenshot_20241105_192237_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674727/bhnrstd8edfcmr0uouej.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:21:19.322Z",
     "destaque": false
@@ -2358,7 +281,7 @@
     "titulo": "y",
     "artista": 1,
     "estilo": 2,
-    "imagem": "trabalhos/Screenshot_20240223_171842_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674727/u1ztxjzpna4xiu0cg2ph.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:21:44.232Z",
     "destaque": false
@@ -2371,7 +294,7 @@
     "titulo": "y",
     "artista": 1,
     "estilo": 2,
-    "imagem": "trabalhos/Screenshot_20250227_130200_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674728/usj44npfq4jstivh6oah.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:22:03.300Z",
     "destaque": false
@@ -2384,7 +307,7 @@
     "titulo": "lk",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/Screenshot_20231103_141856_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674729/t7wdfftze9byp3gesnab.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:28:57.280Z",
     "destaque": false
@@ -2397,7 +320,7 @@
     "titulo": "sd",
     "artista": 1,
     "estilo": 2,
-    "imagem": "trabalhos/Screenshot_20230711_161513_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674730/fi3tozzhhfdczzdz2bdi.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:29:25.429Z",
     "destaque": false
@@ -2410,7 +333,7 @@
     "titulo": "w",
     "artista": 1,
     "estilo": 2,
-    "imagem": "trabalhos/Screenshot_20230704_153854_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674730/aw8z8a1aek6b3ku02rns.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:29:55.719Z",
     "destaque": false
@@ -2423,7 +346,7 @@
     "titulo": "ds",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/Screenshot_20230607_140835_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674731/bh5tq0wztknbfhyo5lng.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:43:10.500Z",
     "destaque": false
@@ -2436,7 +359,7 @@
     "titulo": "aranha",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/Screenshot_20230905_175954_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674731/fn7bgdpghj8bsiezw0pf.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:43:38.690Z",
     "destaque": false
@@ -2449,7 +372,7 @@
     "titulo": "costas phoenix",
     "artista": 1,
     "estilo": 6,
-    "imagem": "trabalhos/Screenshot_20250415_201253_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674732/nsqlrrswcfxtjpcwxp6k.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:45:12.953Z",
     "destaque": false
@@ -2462,7 +385,7 @@
     "titulo": "costas dragon",
     "artista": 1,
     "estilo": 6,
-    "imagem": "trabalhos/Screenshot_20230914_144923_Instagram.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674733/ob43gtecpkftacmcszrz.jpg",
     "publicado": true,
     "criado_em": "2026-01-15T21:45:42.048Z",
     "destaque": false
@@ -2475,7 +398,7 @@
     "titulo": "esfinge",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/esfinge_-_Copia_2.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674734/vpys3ddmgxtmrpvebfzt.jpg",
     "publicado": true,
     "criado_em": "2026-01-31T20:34:00.084Z",
     "destaque": false
@@ -2488,7 +411,7 @@
     "titulo": "cats",
     "artista": 1,
     "estilo": 2,
-    "imagem": "trabalhos/cats.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674735/lc7mciv6unwhu82lrffz.jpg",
     "publicado": true,
     "criado_em": "2026-01-31T20:34:49.744Z",
     "destaque": false
@@ -2501,7 +424,7 @@
     "titulo": "hand",
     "artista": 1,
     "estilo": 7,
-    "imagem": "trabalhos/demo.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674736/qohmnpqr1trrb7eidmam.jpg",
     "publicado": true,
     "criado_em": "2026-01-31T20:35:51.678Z",
     "destaque": false
@@ -2514,7 +437,7 @@
     "titulo": "arm",
     "artista": 1,
     "estilo": 7,
-    "imagem": "trabalhos/demo2.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674737/n6ls4edumkglhlcve0pr.jpg",
     "publicado": true,
     "criado_em": "2026-01-31T20:36:37.484Z",
     "destaque": false
@@ -2527,7 +450,7 @@
     "titulo": "helix",
     "artista": 2,
     "estilo": 5,
-    "imagem": "trabalhos/helix.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674738/bjt5enzm87cfwwiye9qy.jpg",
     "publicado": true,
     "criado_em": "2026-01-31T20:55:28.668Z",
     "destaque": false
@@ -2540,7 +463,7 @@
     "titulo": "fbra├ºo",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/fechamento.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674739/b2jag8gozhue0kasrniv.jpg",
     "publicado": true,
     "criado_em": "2026-01-31T20:58:20.157Z",
     "destaque": false
@@ -2553,7 +476,7 @@
     "titulo": "pinterna",
     "artista": 1,
     "estilo": 1,
-    "imagem": "trabalhos/interno.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772674741/pvjfovdw4glb2bzazprk.jpg",
     "publicado": true,
     "criado_em": "2026-01-31T20:58:49.924Z",
     "destaque": false
@@ -2566,7 +489,7 @@
     "titulo": "conch",
     "artista": 2,
     "estilo": 5,
-    "imagem": "trabalhos/conch.jpg.png",
+    "imagem": "image/upload/v1772720799/gvoyjebejtai2z1oevmw.jpg",
     "publicado": true,
     "criado_em": "2026-03-04T16:58:16.144Z",
     "destaque": false
@@ -2579,7 +502,7 @@
     "titulo": "helix2",
     "artista": 2,
     "estilo": 5,
-    "imagem": "trabalhos/helux.jpg.png",
+    "imagem": "image/upload/v1772720779/fmxskp9xqyl5xobvlxif.jpg",
     "publicado": true,
     "criado_em": "2026-03-04T16:59:10.607Z",
     "destaque": false
@@ -2592,7 +515,7 @@
     "titulo": "nostril",
     "artista": 2,
     "estilo": 5,
-    "imagem": "trabalhos/nostril.jpg.png",
+    "imagem": "image/upload/v1772720750/badleqckqpghn7wuockg.jpg",
     "publicado": true,
     "criado_em": "2026-03-04T16:59:51.738Z",
     "destaque": false
@@ -2605,7 +528,7 @@
     "titulo": "sombranc",
     "artista": 2,
     "estilo": 5,
-    "imagem": "trabalhos/sombran.jpg.png",
+    "imagem": "image/upload/v1772720646/tyffshbxz08xcby4bgpx.jpg",
     "publicado": true,
     "criado_em": "2026-03-04T17:00:28.465Z",
     "destaque": false
@@ -2618,7 +541,7 @@
     "titulo": "surface",
     "artista": 2,
     "estilo": 5,
-    "imagem": "trabalhos/surface.jpg.png",
+    "imagem": "image/upload/v1772720716/gqnpuqbeyuzhbxqhmofb.jpg",
     "publicado": true,
     "criado_em": "2026-03-04T17:01:01.920Z",
     "destaque": false
@@ -2640,7 +563,7 @@
     "nome": "Argola",
     "descricao": "Argola com Zirc├┤noas em Tit├ónio, grau implante.\r\nDelicada, elegante e nada b├ísica.Possui zirc├┤nias laterais que garantem brilho na media certa.Produzida em tit├ónio grau implante,oferce mais seguran├ºa, conforto e durabilidade.Indicada para: H├®lice,Conch,Trag├║s,Anti-h├®lix,Lobulo,Aba nasal e umbigo.\r\n\r\nTamanho: 7mm/10mm\r\nEspessura: 1.2mm",
     "preco": "70.00",
-    "imagem": "produtos/arg_dourada_brilhantes.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715678/vbr1htaztymujfe0psgh.jpg",
     "ativo": true,
     "criado_em": "2026-02-12T20:12:31.721Z"
   }
@@ -2653,7 +576,7 @@
     "nome": "Labret",
     "descricao": "Labret em tit├ónio grau implante,com pedra em zirc├┤nia.\r\nOnde utilizar: um cl├íssico que n├úo pode faltar,utilizada em perfura├º├Áes auriculares como tragus, conch, scapha, h├®lix, l├│bulo e tamb├®m em perfura├º├Áes bucais e aba nasal.\r\n\r\ntamanho: 6mm/8mm",
     "preco": "60.00",
-    "imagem": "produtos/Labret_pedra_cravejado.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715679/pdufkn4lm1xdkqoroxmq.jpg",
     "ativo": true,
     "criado_em": "2026-02-12T20:22:35.910Z"
   }
@@ -2666,7 +589,7 @@
     "nome": "Labret dourado",
     "descricao": "Labret em tit├ónio  dourado grau implante,com pedra em zirc├┤nia.\r\nOnde utilizar: um cl├íssico que n├úo pode faltar,utilizada em perfura├º├Áes auriculares como tragus, conch, scapha, h├®lix, l├│bulo e tamb├®m em perfura├º├Áes bucais e aba nasal.\r\n\r\ntamanho: 6mm/8mm",
     "preco": "60.00",
-    "imagem": "produtos/Labret_dourado_pedra_anatomica.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715680/xpjnimtcs7icztejpda3.jpg",
     "ativo": true,
     "criado_em": "2026-02-12T20:23:59.019Z"
   }
@@ -2679,7 +602,7 @@
     "nome": "Labret brilho retangular",
     "descricao": "Labret em tit├ónio  grau implante,com pedra  tipo gota em zirc├┤nia.\r\nOnde utilizar: um cl├íssico que n├úo pode faltar,utilizada em perfura├º├Áes auriculares como tragus, conch, scapha, h├®lix, l├│bulo e tamb├®m em perfura├º├Áes bucais e aba nasal.\r\n\r\ntamanho: 6mm/8mm",
     "preco": "60.00",
-    "imagem": "produtos/labret_pedra_gota.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715681/coopxviqohkg6zx1ggmd.jpg",
     "ativo": true,
     "criado_em": "2026-02-12T20:27:35.738Z"
   }
@@ -2692,7 +615,7 @@
     "nome": "Labret Estrelas",
     "descricao": "Labret em tit├ónio  dourado e prata grau implante, em formato de estrela.\r\nOnde utilizar: um cl├íssico que n├úo pode faltar,utilizada em perfura├º├Áes auriculares como tragus, conch, scapha, h├®lix, l├│bulo e tamb├®m em perfura├º├Áes bucais e aba nasal.\r\n\r\ntamanho: 6mm/8mm",
     "preco": "60.00",
-    "imagem": "produtos/Estrelas_prata_e_dourado.png",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715682/dn2tc3dzi7aejd2ryf7d.jpg",
     "ativo": true,
     "criado_em": "2026-02-12T20:30:39.018Z"
   }
@@ -2705,7 +628,7 @@
     "nome": "arg dupla com brilhante",
     "descricao": "Segmento duplo cravejado lateral\r\n. Espessura: 1.2mm\r\n. Di├ómetro: 10mm\r\nIndica├º├úo de uso: Lobulo e Conch.",
     "preco": "80.00",
-    "imagem": "produtos/arg_dourada_dupla_com_brilhante.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715683/cd4jcwd1oamlwwfu7cwl.jpg",
     "ativo": true,
     "criado_em": "2026-03-03T12:33:14.172Z"
   }
@@ -2718,7 +641,7 @@
     "nome": "arg cruz com pedra",
     "descricao": "Segmento Cruz cravejado\r\n. Espessura: 1.2mm\r\n. Di├ómetro: 10mm\r\n. Tit├ónio natural ou gold\r\nIndica├º├úo de uso: L├│bulo e Conch",
     "preco": "80.00",
-    "imagem": "produtos/arg_tita_formato_cruz_com_pedra.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715684/q77msm6xeq9ohzbz1m0n.jpg",
     "ativo": true,
     "criado_em": "2026-03-03T12:39:24.248Z"
   }
@@ -2731,7 +654,7 @@
     "nome": "labret closter",
     "descricao": "Labret Cluster Cravejado\r\n. Espessura: 1.2mm\r\n. Haste: 8mm\r\n. Tit├ónio natural ou gold\r\nIndica├º├úo de uso: H├®lix, Conch, Flat",
     "preco": "80.00",
-    "imagem": "produtos/labret_closter.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715685/e9ajiv8gh0kkz9uvxb4c.jpg",
     "ativo": true,
     "criado_em": "2026-03-03T12:46:46.532Z"
   }
@@ -2744,7 +667,7 @@
     "nome": "labret sol",
     "descricao": "Labret Indiano com pedra em Zirc├┤nia\r\n. Espessura: 1.2mm\r\n. Haste: 8mm\r\n. Tit├ónio natural ou gold\r\nIndica├ºa├Á de uso: H├®lix, Conch, Flat, \r\nL├│bulo, Labret, Medusa.",
     "preco": "80.00",
-    "imagem": "produtos/sol_titanio.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715686/qnn0wsgqwzrt4iovmzwb.jpg",
     "ativo": true,
     "criado_em": "2026-03-03T12:55:13.086Z"
   }
@@ -2757,7 +680,7 @@
     "nome": "arg dupla com adorno",
     "descricao": "Segmento triplo com Zirc├┤nia\r\n. Espessura: 1.2mm\r\n. Di├ómetro: 10mm\r\n. Tit├ónio natural\r\nIndica├º├úo de uso: L├│bulo, Conch.",
     "preco": "80.00",
-    "imagem": "produtos/arg_dupla_com_brilho_e_adorno_tita.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715687/u02ejfppgu2lb4elgkqf.jpg",
     "ativo": true,
     "criado_em": "2026-03-03T13:01:03.825Z"
   }
@@ -2770,7 +693,7 @@
     "nome": "arg crav frontal",
     "descricao": "Segmento Cravejado Frontal\r\n. Eespessura: 1.2mm\r\n. Di├ómetro: 8mm ou 10mm\r\n. Tit├ónio ou gold\r\nIndica├º├úo de uso: Daith, Septo.",
     "preco": "80.00",
-    "imagem": "produtos/arg_dourada_e_prata_crave_frontal.jpg",
+    "imagem": "image/upload/https://res.cloudinary.com/dtn0qu0h7/image/upload/v1772715688/ujgjfcap8pvzlrhohbqh.jpg",
     "ativo": true,
     "criado_em": "2026-03-03T13:06:12.228Z"
   }
