@@ -17,34 +17,20 @@ from dotenv import load_dotenv
 load_dotenv()
 import dj_database_url
 
-# Carregar variáveis de ambiente
-SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = os.getenv('DEBUG') == 'True'
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS','skullface-loja.onrender.com').split(',')
-CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS','https://skullface-loja.onrender.com').split(',')
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
-
+# Carregar variáveis de ambiente
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(t@5^682g=ik9wzzy@9+=kjp*6hp-p(pig5#987wp@b@ogv5sa'
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-(t@5^682g=ik9wzzy@9+=kjp*6hp-p(pig5#987wp@b@ogv5sa')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(',')
 
 # Configurações para acesso mobile/local - Simplificado
-CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:8000',
-    'http://127.0.0.1:8000',
-    'http://192.168.15.2:8000',
-    'http://192.168.15.4:8000',
-]
+CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS', 'http://localhost:8000,http://127.0.0.1:8000').split(',')
 # Adicionar IP local automaticamente
 try:
     # Obter IP real da interface de rede
@@ -122,11 +108,11 @@ DATABASES = {
         ssl_require=os.environ.get('DATABASE_SSL_REQUIRE', 'False').lower() == 'true'
     )
 }
- 
+
 CLOUDINARY_STORAGE = {
-    "CLOUD_NAME": "dtn0qu0h7",
-    "API_KEY": "614392948124382",
-    "API_SECRET":  "oAfPb48ee5rh5ZsudAqfwj9tGnM",
+    'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME',),
+    'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.getenv('CLOUDINARY_API_SECRET')
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
@@ -187,21 +173,11 @@ CACHES = {
         'LOCATION': 'unique-snowflake',
     }
 }
-# Garante compresão + caching para produção
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dtn0qu0h7',
-    'API_KEY': '614392948124382',
-    'API_SECRET': 'oAfPb48ee5rh5ZsudAqfwj9tGnM',
-}
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 import cloudinary
 
 cloudinary.config(
-    cloud_name='dtn0qu0h7',
-    api_key='614392948124382',
-    
-    api_secret='oAfPb48ee5rh5ZsudAqfwj9tGnM',
+    cloud_name=os.getenv('CLOUDINARY_CLOUD_NAME'),
+    api_key=os.getenv('CLOUDINARY_API_KEY'),
+    api_secret=os.getenv('CLOUDINARY_API_SECRET'),
 )
