@@ -124,9 +124,9 @@ DATABASES = {
 }
  
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dtnOquOh7',
-    'API_KEY': '614392948124382',
-    'API_SECRET':  'oAfPb48ee5rh5ZsudAqfwj9tGnM',
+    "CLOUD_NAME": "dtn0qu0h7",
+    "API_KEY": "614392948124382",
+    "API_SECRET":  "oAfPb48ee5rh5ZsudAqfwj9tGnM",
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
@@ -189,3 +189,19 @@ CACHES = {
 }
 # Garante compresão + caching para produção
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dtn0qu0h7',
+    'API_KEY': '614392948124382',
+    'API_SECRET': 'oAfPb48ee5rh5ZsudAqfwj9tGnM',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+import cloudinary
+
+cloudinary.config(
+    cloud_name='dtn0qu0h7',
+    api_key='614392948124382',
+    
+    api_secret='oAfPb48ee5rh5ZsudAqfwj9tGnM',
+)
