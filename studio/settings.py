@@ -27,7 +27,17 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-(t@5^682g=ik9wzzy@9+=kjp*6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(',')
+# ALLOWED_HOSTS - Em produção, especificar domínios exatos (não usar '*')
+if DEBUG:
+    ALLOWED_HOSTS = ['*']  # Permite todos em desenvolvimento
+else:
+    # Em produção, usar variável de ambiente com domínios específicos
+    allowed_hosts_env = os.getenv('ALLOWED_HOSTS', '')
+    if allowed_hosts_env:
+        ALLOWED_HOSTS = [host.strip() for host in allowed_hosts_env.split(',') if host.strip()]
+    else:
+        # Fallback seguro: não permitir nenhum host se não especificado
+        ALLOWED_HOSTS = []
 
 # Configurações para acesso mobile/local - Simplificado
 CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS', 'http://localhost:8000,http://127.0.0.1:8000').split(',')
@@ -160,12 +170,46 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # Garante compresão + caching para produção
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Configurações de performance para desenvolvimento
-if DEBUG:
+# ====== Configurações de Segurança ======
+# As configurações abaixo protegem contra ataques comuns:
+# - XSS (Cross-Site Scripting)
+# - Clickjacking
+# - Man-in-the-Middle (HTTPS/HSTS)
+# - Session hijacking
+# - CSRF (Cross-Site Request Forgery)
+if not DEBUG:
+    # HTTPS/SSL - Apenas em produção
+    SECURE_SSL_REDIRECT = os.getenv('SECURE_SSL_REDIRECT', 'False').lower() == 'true'
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_SECONDS = 31536000  # 1 ano
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    
+    # Headers de segurança
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    X_FRAME_OPTIONS = 'DENY'
+    SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
+else:
     # Desabilitar algumas verificações para melhorar performance em desenvolvimento
     SECURE_BROWSER_XSS_FILTER = False
     SECURE_CONTENT_TYPE_NOSNIFF = False
-    
+    SESSION_COOKIE_SECURE = False
+    CSRF_COOKIE_SECURE = False
+
+# Configurações de sessão seguras
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_HTTPONLY = True
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_USE_SESSIONS = False  # Usar cookies para CSRF (padrão)
+
+# Timeout de sessão (em segundos) - 2 semanas
+SESSION_COOKIE_AGE = 1209600
+SESSION_SAVE_EVERY_REQUEST = False
+
 # Configurações de cache para melhorar performance mobile
 CACHES = {
     'default': {
