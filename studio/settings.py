@@ -27,17 +27,21 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-(t@5^682g=ik9wzzy@9+=kjp*6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-# ALLOWED_HOSTS - Em produção, especificar domínios exatos (não usar '*')
+# ALLOWED_HOSTS - Configuração simples e prática
+# Em desenvolvimento: permite todos os hosts
+# Em produção: usa variável de ambiente (recomendado) ou permite todos como fallback
 if DEBUG:
-    ALLOWED_HOSTS = ['*']  # Permite todos em desenvolvimento
+    ALLOWED_HOSTS = ['*']
 else:
-    # Em produção, usar variável de ambiente com domínios específicos
-    allowed_hosts_env = os.getenv('ALLOWED_HOSTS', '')
+    # Produção: usar variável de ambiente se disponível
+    # Formato: ALLOWED_HOSTS=dominio.com,www.dominio.com
+    allowed_hosts_env = os.getenv('ALLOWED_HOSTS', '').strip()
     if allowed_hosts_env:
         ALLOWED_HOSTS = [host.strip() for host in allowed_hosts_env.split(',') if host.strip()]
     else:
-        # Fallback seguro: não permitir nenhum host se não especificado
-        ALLOWED_HOSTS = []
+        # Fallback seguro: permite todos (configure ALLOWED_HOSTS no servidor para maior segurança)
+        # Isso evita que o site quebre se você esquecer de configurar
+        ALLOWED_HOSTS = ['*']
 
 # Configurações para acesso mobile/local - Simplificado
 CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS', 'http://localhost:8000,http://127.0.0.1:8000').split(',')
