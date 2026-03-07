@@ -2181,11 +2181,16 @@ html {
             (function() {
                 'use strict';
                 
-                // Intersection Observer para animar seções ao entrarem na viewport
+                // Detectar mobile para ajustar configurações
+                const isMobile = window.innerWidth <= 768;
+                
+                // Intersection Observer - mais responsivo no mobile
                 const observerOptions = {
                     root: null,
-                    rootMargin: '0px 0px -100px 0px', // Anima quando está 100px antes de entrar na tela
-                    threshold: 0.1 // Anima quando 10% da seção está visível
+                    // Mobile: anima mais cedo (50px antes). Desktop: 100px antes
+                    rootMargin: isMobile ? '0px 0px -50px 0px' : '0px 0px -100px 0px',
+                    // Mobile: anima com menos visibilidade (5%). Desktop: 10%
+                    threshold: isMobile ? 0.05 : 0.1
                 };
                 
                 const observer = new IntersectionObserver(function(entries) {
@@ -2200,17 +2205,37 @@ html {
                 
                 // Observar todas as seções quando o DOM estiver pronto
                 document.addEventListener('DOMContentLoaded', function() {
-                    // Observar apenas seções (não hero-section)
-                    const sections = document.querySelectorAll('section.section');
+                    // Observar seções com class="section" E também seções com id="loja" ou class="loja-section"
+                    const sections = document.querySelectorAll('section.section, section#loja, section.loja-section');
                     sections.forEach(function(section) {
                         // Verificar se já está visível na tela
                         const rect = section.getBoundingClientRect();
-                        if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        // No mobile, verificar com mais margem para carregar mais cedo (200px antes)
+                        const viewportMargin = isMobile ? window.innerHeight + 200 : window.innerHeight;
+                        if (rect.top < viewportMargin && rect.bottom > -100) {
                             section.classList.add('visible');
                         } else {
                             observer.observe(section);
                         }
                     });
+                    
+                    // No mobile, também observar durante o scroll para detectar mais cedo
+                    if (isMobile) {
+                        let scrollTimeout;
+                        window.addEventListener('scroll', function() {
+                            clearTimeout(scrollTimeout);
+                            scrollTimeout = setTimeout(function() {
+                                sections.forEach(function(section) {
+                                    if (!section.classList.contains('visible')) {
+                                        const rect = section.getBoundingClientRect();
+                                        if (rect.top < window.innerHeight + 150) {
+                                            section.classList.add('visible');
+                                        }
+                                    }
+                                });
+                            }, 50);
+                        }, { passive: true });
+                    }
                 });
                 
                 // Smooth scroll premium com offset
