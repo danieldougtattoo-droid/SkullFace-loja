@@ -145,7 +145,7 @@
             {% for trabalho in trabalhos_tatuagem %}
                 {% if trabalho.imagem %}
                 <div class="carousel-slide {% if forloop.first %}active{% endif %}">
-                    <img src="{{ trabalho.imagem.url }}" alt="{{ trabalho.titulo }}">
+                    <img src="{{ trabalho.imagem.url }}" alt="{{ trabalho.titulo }}" {% if forloop.first %}loading="eager"{% else %}loading="lazy"{% endif %}>
                 </div>
                 {% endif %}
             {% endfor %}
@@ -169,6 +169,7 @@
                 <div class="carousel-slide {% if forloop.first %}active{% endif %}">
                     <img src="{{ trabalho.imagem.url }}" 
                          alt="{{ trabalho.titulo }}"
+                         {% if forloop.first %}loading="eager"{% else %}loading="lazy"{% endif %}
                          onerror="const slide = this.parentElement; slide.remove(); const carousel = document.getElementById('carousel-piercing'); if(carousel) { const remainingSlides = carousel.querySelectorAll('.carousel-slide'); if(remainingSlides.length > 0 && !carousel.querySelector('.carousel-slide.active')) { remainingSlides[0].classList.add('active'); } if(typeof slidesPiercing !== 'undefined') { slidesPiercing = remainingSlides; } }">
                 </div>
                 {% endif %}

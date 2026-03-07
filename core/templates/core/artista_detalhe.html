@@ -6,7 +6,7 @@
 {% block content %}
     <section class="artista-detalhe">
         <div class="perfil">
-            <img src="{% static artista.foto %}" alt="{{ artista.nome }}">
+            <img src="{% static artista.foto %}" alt="{{ artista.nome }}" loading="lazy">
         </div>
 
         <div class="info">
