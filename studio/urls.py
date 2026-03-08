@@ -13,8 +13,7 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 else:
-    # Em produção (Render), servir arquivos de mídia através do Django
-    # Isso garante que as imagens sejam acessíveis mesmo quando DEBUG=False
+    # Em produção: servir arquivos de mídia através do Django
     urlpatterns += [
         re_path(r'^media/(?P<path>.*)$', serve, {
             'document_root': settings.MEDIA_ROOT,
