@@ -125,6 +125,11 @@ DATABASES = {
     }
 }
 
+import dj_database_url
+DATABASE_URL = os.getenv('DATABASE_URL')
+if DATABASE_URL:
+    DATABASES['default'] = dj_database_url.config(default=DATABASE_URL, conn_max_age=600)  # type: ignore[assignment]
+
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME',),
     'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
