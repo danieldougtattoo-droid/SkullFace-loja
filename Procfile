@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput && python manage.py migrate && python manage.py createsuperuser --noinput --username $DJANGO_SUPERUSER_USERNAME || true && gunicorn studio.wsgi --bind 0.0.0.0:$PORT
+web: python manage.py collectstatic --noinput && python manage.py migrate && gunicorn studio.wsgi --bind 0.0.0.0:$PORT
