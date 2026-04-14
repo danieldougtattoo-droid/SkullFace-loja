@@ -2141,6 +2141,8 @@ html {
                     initViewer();
                 }
             })();
+            /** Voltar do celular fecha o modal de artistas em vez de sair do site */
+            let artistModalHistoryPushed = false;
             // Função para abrir o modal do artista
             function openArtist(artistId) {
                 const modal = document.getElementById('artist-modal');
@@ -2157,23 +2159,45 @@ html {
                     activeBody.style.display = 'block';
                     modal.classList.add('show');
                     document.body.style.overflow = 'hidden';
+                    try {
+                        history.pushState({ artistModal: true }, '', window.location.href);
+                        artistModalHistoryPushed = true;
+                    } catch (e) {
+                        artistModalHistoryPushed = false;
+                    }
                 } else {
                     console.error('Corpo do modal não encontrado para:', 'artist-' + artistId);
                 }
             }
-                // Função para fechar o modal do artista
-                function closeArtist() {
-                    const modal = document.getElementById('artist-modal');
-                    modal.classList.remove('show');
-                    document.body.style.overflow = '';
+            // Função para fechar o modal do artista
+            function closeArtist(fromPopState) {
+                const modal = document.getElementById('artist-modal');
+                if (!modal || !modal.classList.contains('show')) {
+                    return;
                 }
-                // Função para fechar o modal ao clicar fora
-                document.addEventListener('click', function(event) {
-                    const modal = document.getElementById('artist-modal');
-                    if (modal.classList.contains('show') && event.target === modal) {
-                        closeArtist();
-                    }
-                });
+                var usarHistoryBack = artistModalHistoryPushed && !fromPopState;
+                artistModalHistoryPushed = false;
+                modal.classList.remove('show');
+                document.body.style.overflow = '';
+                if (usarHistoryBack) {
+                    try {
+                        history.back();
+                    } catch (e) {}
+                }
+            }
+            window.addEventListener('popstate', function () {
+                var modal = document.getElementById('artist-modal');
+                if (modal && modal.classList.contains('show')) {
+                    closeArtist(true);
+                }
+            });
+            // Função para fechar o modal ao clicar fora
+            document.addEventListener('click', function(event) {
+                const modal = document.getElementById('artist-modal');
+                if (modal && modal.classList.contains('show') && event.target === modal) {
+                    closeArtist();
+                }
+            });
         </script>
         
         <!-- Script para animações premium das seções -->
@@ -2274,7 +2298,9 @@ html {
             // Variável global para salvar posição do scroll
             let savedScrollPosition = 0;
             let modalAberto = false; // Prevenir duplo clique
-            
+            /** Quando true, há um history.pushState do modal — voltar do celular fecha o modal em vez de sair do site */
+            let descricaoModalHistoryPushed = false;
+
             function abrirDescricao(titulo, texto, imagemUrl, preco, elementoImg) {
                 // Prevenir duplo clique
                 if (modalAberto) {
@@ -2342,6 +2368,13 @@ html {
                     
                     modalAberto = true;
                     modal.classList.add('active');
+                    // Empilha estado no histórico: o "voltar" do celular dispara popstate e fecha o modal (não sai do site)
+                    try {
+                        history.pushState({ descricaoModal: true }, '', window.location.href);
+                        descricaoModalHistoryPushed = true;
+                    } catch (e) {
+                        descricaoModalHistoryPushed = false;
+                    }
                     
                     // Aplicar transform diferente baseado no índice (0-4) apenas no desktop
                     // Containers 1-4 (índices 0-3): sobem levemente
@@ -2382,13 +2415,18 @@ html {
                 }
             }
             
-            function fecharDescricao(event) {
+            function fecharDescricao(event, fromPopState) {
                 if (event) {
                     event.preventDefault();
                     event.stopPropagation();
                 }
                 const modal = document.getElementById('descricao-modal');
                 const descricaoBox = document.querySelector('.descricao-box');
+                if (!modal || !modal.classList.contains('active')) {
+                    return;
+                }
+                var usarHistoryBack = descricaoModalHistoryPushed && !fromPopState;
+                descricaoModalHistoryPushed = false;
                 if (modal) {
                     // Resetar transform ao fechar (voltar para centralização padrão)
                     if (descricaoBox) {
@@ -2420,7 +2458,19 @@ html {
                         });
                     }
                 }
+                if (usarHistoryBack) {
+                    try {
+                        history.back();
+                    } catch (e) {}
+                }
             }
+
+            window.addEventListener('popstate', function () {
+                var modal = document.getElementById('descricao-modal');
+                if (modal && modal.classList.contains('active')) {
+                    fecharDescricao(null, true);
+                }
+            });
             
             document.addEventListener('DOMContentLoaded', function() {
                 const modal = document.getElementById('descricao-modal');
